@@ -33,6 +33,6 @@ jobs:
         git config --global user.email "jiacheh4@berkeley.edu"
         git add "$FILE"
         git commit -m "Daily Server Wellness Check"
-        git push https://x-access-token:${{ secrets.auto_commit_token }}@github.com/FfangAI/test-server.git
+        git push https://x-access-token:${{ secrets.test_server_auto_commit_token }}@github.com/FfangAI/test-server.git
       env:
-        GITHUB_TOKEN: ${{ secrets.auto_commit_token }}
+        GITHUB_TOKEN: ${{ secrets.test_server_auto_commit_token }}
